@@ -28,7 +28,23 @@ section{max-width:1200px;margin:auto;padding:90px 6%}.section-title{font-family:
 </main>
 <div id="modal"><button id="close" onclick="closeModal()">×</button><img id="modalImg" alt="Jessy memory"></div>
 <script>
-const imgs=['_DSC4013.JPG','7a54ff7b-b936-4a7f-9a9a-9b7eca30a035.jpg','2463c2b9-d9ad-49d6-afe9-21f3bcbca8f0.jpg','DSC_1154.JPG','IMG-20251202-WA0000.jpg','IMG-20251202-WA0001.jpg','IMG-20251202-WA0002.jpg','IMG-20251226-WA0038.jpg','IMG-20251226-WA0038_1-removebg-preview.png','IMG-20251226-WA0038-removebg-preview.png','IMG-20251226-WA0039.jpg','IMG-20251226-WA0039-removebg-preview.png','IMG-20251226-WA0040.jpg','IMG-20251226-WA0040-removebg-preview.png','IMG-20251226-WA0038_1.jpg'];
+const imgs=[
+  "photo01.jpg",
+  "photo02.jpg",
+  "photo03.jpg",
+  "photo04.jpg",
+  "photo05.jpg",
+  "photo06.jpg",
+  "photo07.png",
+  "photo08.jpg",
+  "photo09.png",
+  "photo10.jpg",
+  "photo11.png",
+  "photo12.jpg",
+  "photo13.png",
+  "photo14.jpg",
+  "photo15.jpg"
+];
 const captions=['✨ A beautiful smile','🌹 Traditional elegance','🦜 A magical moment','👑 Princess energy','🌸 Pink memories','💫 A special day','🌿 Peaceful moment','🌅 Dreamy vibes','💖 Just Jessy','✨ Forever a memory','🌺 Another lovely moment','💛 Golden memories','🌷 A day to remember','🎀 Sweet sister moment','🌙 One more memory'];
 const g=document.getElementById('gallery'); imgs.forEach((x,i)=>{const d=document.createElement('div');d.className='photo';d.innerHTML=`<img src="${x}" alt="Jessy memory ${i+1}" loading="lazy"><span class="caption">${captions[i]}</span>`;d.onclick=()=>showModal(d.querySelector('img').src);g.appendChild(d)});
 function openSurprise(){document.getElementById('env').classList.add('open');setTimeout(()=>{document.getElementById('opening').classList.add('hide');celebrate();},550)}
