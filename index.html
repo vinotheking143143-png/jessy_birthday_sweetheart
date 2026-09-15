@@ -102,6 +102,14 @@ section{max-width:1200px;margin:auto;padding:90px 6%}.section-title{font-family:
   }
 }
 </style>
+
+<style>
+.video-section{padding:90px 6%;text-align:center}
+.video-card{max-width:900px;margin:30px auto 0;padding:12px;border-radius:28px;background:linear-gradient(145deg,#ffffff12,#ff4f9a12);border:1px solid #ffffff20;box-shadow:0 25px 90px #0009}
+.video-card video{width:100%;display:block;border-radius:20px;background:#000;max-height:75vh}
+.video-note{color:#cfc1d0;line-height:1.8;margin:0 auto;max-width:680px}
+@media(max-width:600px){.video-section{padding:65px 5%}.video-card{padding:8px;border-radius:22px}.video-card video{border-radius:16px}}
+</style>
 </head>
 <body>
   <section class="reasons-section">
@@ -135,6 +143,7 @@ section{max-width:1200px;margin:auto;padding:90px 6%}.section-title{font-family:
 <main>
 <section class="hero"><div><span class="badge">🎂 19 September 2026 · Sister Special</span><h1>Happy Birthday<br>Jessy</h1><h2>To the most wonderful sister 💕</h2><p>This little corner of the internet is just for you — filled with memories, smiles, and a message from Anna that you can keep forever.</p><div class="actions"><button class="btn" onclick="document.getElementById('memories').scrollIntoView()">See Our Memories 📸</button><button class="btn ghost" onclick="document.getElementById('letter').scrollIntoView()">Read My Letter 💌</button></div></div></section>
 <section id="memories"><h2 class="section-title">Our Little Memory Gallery ✨</h2><p class="lead">Every picture tells a tiny story. Every story is a reason to smile.</p><div class="gallery" id="gallery"></div></section>
+<section class="video-section" id="special-video"><h2 class="section-title">🎬 A Special Memory For You, Jessy ❤️</h2><p class="video-note">Some memories are too beautiful to put into words. So I made this little video just for you. Press play and enjoy every moment. 💕</p><div class="video-card"><video controls playsinline preload="metadata"><source src="jessy_birthday_video.mp4" type="video/mp4">Your browser does not support the video tag.</video></div></section>
 <section id="letter"><h2 class="section-title">A Letter From Anna 💌</h2><div class="letter"><div class="letter-content">
 
     <p>Dear Jessy, ❤️</p>
